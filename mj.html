@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+    <title>Marjane Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+      <ul>
+        <li><div class="circle4"></div><div class="i3">_</div>m</li>
+        <li class="i44"><i class="fa-solid fa-cart-shopping"></i></li>
+        <li class="search4"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Rechercher un produit"><i style="position: absolute; left: 88%;top: 6px;" class="fa-solid fa-qrcode"></i></li>
+      </ul>
+   </main>
+<header>
+<ul>
+    <li class="x"><i class="fa-solid fa-house"></i></li>
+    <li class="blue"><div class="circle"></div>marjane</li>
+    <li class="orange"><div class="circle2"></div>marjane <span>market</span></li>
+    <li class="search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Rechercher un produit"></li>
+    <li class="simple1"><i class="fa-solid fa-basket-shopping"></i> <p> Courses en ligne</p></li>
+    <li class="simple2"><i class="fa-solid fa-percent"></i> <p>Promotions</p></li>
+    <li class="simple3"><i class="fa-solid fa-credit-card"></i> <p> Carte marjane</p></li>
+    <li class="simple4"><i class="fa-solid fa-building"></i> <p> Groupes</p></li>
+    <li class="le"><i class="fa-solid fa-cart-shopping"></i></li>
+    <li class="le"><i class="fa-solid fa-user"></i></li>
+<div class="listak">
+    <li class="home"><i class="fa-solid fa-house"></i><p>Accueil</p></li>
+    <li class="shop"><i class="fa-solid fa-basket-shopping"></i><p>Online Courses</p></li>
+    <li class="prom"><i class="fa-solid fa-percent"></i><p>Promotions</p></li>
+    <li class="carte"><i class="fa-solid fa-credit-card"></i><p>Carte marjane</p></li>
+    <li class="bars"><i class="fa-solid fa-bars"></i><p>Menu</p></li>
+</div>
+</ul>
+</header>
+<br><br><br><br><br>
+<section class="on">
+    <img class="v1" src="pic/pub/Banner Avec CTA copy 2.png" width="90%">
+</section>
+<section id="cx">
+    <h1 class="Z"><span class="leso">LES O</span>FFRES IMBATTABLES !</h1>
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="pic/products/p/ariel.png" style="width:40%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pic/products/p/carte-noire.png" style="width:40%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pic/products/p/dari.png" style="width:40%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+<script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+</script>
+    <div class="prods">
+        <div class="prod">
+            <img src="pic/products/p/ariel.png" width="90%">
+        </div>
+        <div class="prod">
+            <img src="pic/products/p/carte-noire.png" width="90%">
+        </div>
+        <div class="prod">
+            <img src="pic/products/p/dari.png" width="90%">
+        </div>     
+        <div class="prod">
+            <img class="EDAN" src="pic/products/p/edam.png" width="300px">
+        </div>   
+    </div>
+    <button>TOUTES LES OFFRES</button>
+</section>
+    <img class="v1" src="pic/pub/carte fide.png" width="100%" style="display: block;margin-bottom: 80px;">
+    <img class="v1" src="pic/pub/de779558-1a3a-470f-9ae8-b056e68f5363.png" width="100%" style="display: block;margin-bottom: 80px;">
+    <h1 class="Z"><span class="leso">TROU</span>VEZ VOTRE MAGASIN</h1>
+    <iframe src="https://www.google.com/maps/d/embed?mid=19zRATFBPiYP_uhxnOaSHZrWkKkXxUsk&amp;=2E312F&amp;noprof=1" style="width: 100%;height: 800px;"></iframe>
+    <h1 class="Z"><span class="leso">ENGA</span>GEMENTS MARJANE</h1>  
+    <div class="ix">
+      <div class="food">
+        <i class="fa-solid fa-utensils"></i>
+      </div>     
+      <div class="smile">
+        <i class="fa-solid fa-face-smile"></i>
+      </div>     
+      <div class="world">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <div class="ixx">
+        <div class="fo">
+          <p>Mieux manger</p>
+        </div>     
+        <div class="sm">
+          <p>Mieux vivre</p>
+        </div>     
+        <div class="wo">
+          <p>Mieux consommer</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="unnd">
+    <section id="zvvv">
+        <ul class="q1">
+            <li style="list-style-type: none;">Informations légales<br><br>
+                <ul>
+                    <li>Engagements Marjane</li>
+                    <li>CGU & CGV</li>
+                    <li>Informations légales</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="q2">
+            <li style="list-style-type: none;">À propos<br><br>
+                <ul>
+                    <li>Marjane Group</li>
+                    <li>Recrutement</li>
+                    <li>Fidélité</li>
+                    <li>SAV</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="q3">
+            <li style="list-style-type: none;">Besoin d'aide ?<br><br>
+                <ul>
+                    <li>Nous contacter</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="q4">
+            <li style="list-style-type: none;">Téléchargez notre appli<br><br>
+                <ul>
+                    <li style="list-style-type: none;">Avec l'application Marjane, vous<br> pouvez faire vos achats encore plus rapidement.</li>
+                    <li style="list-style-type: none;padding-top: 30px;"><img src="pic/pub/app-store.svg" width="150px" style="margin-right: 10px;"><img src="pic/pub/google-play-footer.svg" width="150px"></li>
+                    <li style="list-style-type: none;padding-bottom: 10px;" class="é33">Marjane<img class="fb" id="a" src="pic/pub/fb/facebook.svg" width="47vh"> <img class="fb" id="b"  src="pic/pub/fb/instagram.svg" width="47vh"> <img class="fb" id="c" src="pic/pub/fb/LinkedIn.svg" width="47vh"> <img class="fb" id="d"  src="pic/pub/fb/Youtube.svg" width="47vh"> </li>
+                </ul>
+            </li>
+        </ul>
+    </section>   
+    </div>   
+    <p class="cww" style="text-align: center;width: 600px; margin-left: 30%; font-family: Open Sans, sans-serif;
+    color: #3672ad;font-size: 14px;font-weight: 600;">©2023 Marjane - Tous droits réservés - Mentions légales - Données personnelles</p>  
+    <div class="bigbox"></div>
+</body>
+</html>
